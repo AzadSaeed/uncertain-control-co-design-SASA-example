@@ -1,0 +1,25 @@
+%% formulation
+\documentclass{standalone}
+\usepackage{amsmath}
+\usepackage{bm}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\begin{document}
+\setlength{\abovedisplayskip}{2pt}
+\setlength{\belowdisplayskip}{2pt}
+\pagecolor{white}
+\scalebox{2}{\parbox{0.1\textwidth}{%
+\begin{align*}
+\min_{u(t)} \quad & -x_2(t_f) \\
+\text{subject to:} \quad & \dot{\bm{x}} = \begin{bmatrix}
+- u x_1 \\ u x_1 - \rho u^k x_2
+\end{bmatrix} \\
+& -0.1 \leq x_1(t) \leq 1.1 \\
+& -0.1 \leq x_2(t) \leq 1.1 \\
+& a_L \leq u(t) \leq a_U \\
+& \bm{x}(0) = (1,0.01)
+\end{align*}
+}}
+\end{document}
+
+%% solution

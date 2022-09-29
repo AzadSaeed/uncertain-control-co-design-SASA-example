@@ -1,0 +1,21 @@
+%% formulation
+\documentclass{standalone}
+\usepackage{amsmath}
+\usepackage{bm}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\begin{document}
+\setlength{\abovedisplayskip}{2pt}
+\setlength{\belowdisplayskip}{2pt}
+\pagecolor{white}
+\scalebox{2}{\parbox{0.1\textwidth}{%
+\begin{align*}
+\min_{u(t)} \quad & \int_{0}^{t_f} \left[ r u^2 + q x^2 \right] \mathrm{d}t \\
+\text{subject to:} \quad & \dot{x} = a x + b u \\
+& x(0) = c \\
+& x(t_f) = d
+\end{align*}
+}}
+\end{document}
+
+%% solution

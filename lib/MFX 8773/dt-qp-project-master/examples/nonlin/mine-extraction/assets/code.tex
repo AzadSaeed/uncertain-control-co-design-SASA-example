@@ -1,0 +1,21 @@
+%% formulation
+\documentclass{standalone}
+\usepackage{amsmath}
+\usepackage{bm}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\begin{document}
+\setlength{\abovedisplayskip}{2pt}
+\setlength{\belowdisplayskip}{2pt}
+\pagecolor{white}
+\scalebox{2}{\parbox{0.1\textwidth}{%
+\begin{align*}
+\min_{u} \quad & \int_{0}^{t_f} \left[ \frac{u^2(t)}{x(t)} - a u(t) \right] \mathrm{d}t\\
+\text{subject to:} \quad & \dot{x} = - u(t) \\
+& x(0) = x_0 \\
+& 0 \leq x(t) \leq x_0
+\end{align*}
+}}
+\end{document}
+
+%% solution

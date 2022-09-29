@@ -1,0 +1,15 @@
+!.gitignore
+
+# ignore certain file extensions
+*.ini
+*.asv
+*.sublime-project
+*.sublime-workspace
+
+# ignore certain folders
+.private*/
+plots*/
+
+# ignore specific files
+notes.txt
+DTQP_TEST_bench_LQDO_results.xlsx

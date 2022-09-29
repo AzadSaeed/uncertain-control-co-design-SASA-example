@@ -1,0 +1,20 @@
+%% formulation
+\documentclass{standalone}
+\usepackage{amsmath}
+\usepackage{bm}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\begin{document}
+\setlength{\abovedisplayskip}{2pt}
+\setlength{\belowdisplayskip}{2pt}
+\pagecolor{white}
+\scalebox{2}{\parbox{0.1\textwidth}{%
+\begin{align*}
+\min_{u(t)} \quad & \frac{1}{2} \int_0^{1} \left[ \frac{5}{4} x^2 + x u + u^2 \right] \mathrm{d}t \\
+\text{subject to:} \quad & \dot{x} = x/2 + u \\
+& x(0) = 1 \\
+\end{align*}
+}}
+\end{document}
+
+%% solution

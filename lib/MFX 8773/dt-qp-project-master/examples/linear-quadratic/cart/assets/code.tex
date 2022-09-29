@@ -1,0 +1,20 @@
+%% formulation
+\documentclass{standalone}
+\usepackage{amsmath}
+\usepackage{bm}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\begin{document}
+\setlength{\abovedisplayskip}{2pt}
+\setlength{\belowdisplayskip}{2pt}
+\pagecolor{white}
+\scalebox{2}{\parbox{0.1\textwidth}{%
+\begin{align*}
+\min_{u(t)} \quad & -x_1(t_f) + \frac{1}{2} \int_0^{t_f} u^2 \mathrm{d}t \\
+\text{subject to:} \quad & \dot{\bm{x}} = \begin{bmatrix}x_2 \\ - x_2 + u \end{bmatrix} \\
+& \bm{x}(0) = (0,0) \\
+\end{align*}
+}}
+\end{document}
+
+%% solution

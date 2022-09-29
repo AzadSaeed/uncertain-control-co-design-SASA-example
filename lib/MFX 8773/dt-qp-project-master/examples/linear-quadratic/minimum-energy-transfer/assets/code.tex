@@ -1,0 +1,21 @@
+%% formulation
+\documentclass{standalone}
+\usepackage{amsmath}
+\usepackage{bm}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\begin{document}
+\setlength{\abovedisplayskip}{2pt}
+\setlength{\belowdisplayskip}{2pt}
+\pagecolor{white}
+\scalebox{2}{\parbox{0.1\textwidth}{%
+\begin{align*}
+\min_{\bm{u}(t)} \quad & \int_{t_0}^{t_f} \bm{u}^T \bm{I} \bm{u}\ \mathrm{d}t \\
+\text{subject to:} \quad & \dot{\bm{x}} = \bm{A} \bm{x} + \bm{B} \bm{u} \\
+& \bm{x}(t_0) = \bm{x}_0 \\
+& \bm{x}(t_f) = \bm{x}_f
+\end{align*}
+}}
+\end{document}
+
+%% solution

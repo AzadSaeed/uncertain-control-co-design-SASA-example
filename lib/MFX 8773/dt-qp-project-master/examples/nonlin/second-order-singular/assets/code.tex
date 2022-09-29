@@ -1,0 +1,25 @@
+%% formulation
+\documentclass{standalone}
+\usepackage{amsmath}
+\usepackage{bm}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\begin{document}
+\setlength{\abovedisplayskip}{2pt}
+\setlength{\belowdisplayskip}{2pt}
+\pagecolor{white}
+\scalebox{2}{\parbox{0.1\textwidth}{%
+\begin{align*}
+\min_{u_1(t)} \quad & x_3(t_f)\\
+\text{subject to:} \quad & \dot{\bm{x}} = \begin{bmatrix}
+x_2 \\
+u_1 \\
+x_2^2/2 + x_3^2/2
+\end{bmatrix} \\
+& \bm{x}(0) = (0,1,0) \\
+& -1 \leq u_1 \leq 1
+\end{align*}
+}}
+\end{document}
+
+%% solution

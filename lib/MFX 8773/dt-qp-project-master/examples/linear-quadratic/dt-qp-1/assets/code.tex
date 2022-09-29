@@ -1,0 +1,27 @@
+%% formulation
+\documentclass{standalone}
+\usepackage{amsmath}
+\usepackage{bm}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\begin{document}
+\setlength{\abovedisplayskip}{2pt}
+\setlength{\belowdisplayskip}{2pt}
+\pagecolor{white}
+\scalebox{2}{\parbox{0.1\textwidth}{%
+\begin{align*}
+\min_{\bm{u}(t)} \quad & \int_0^1 \left[ u_1^2/10 + u_2^2/10 + u_1x_1 + u_1x_2 + 5\left(x_2-g(t)\right)^2 \right] \mathrm{d}t + \max_{0\leq t\leq 1} x_3(t) \\
+\text{subject to:} \quad & \dot{\bm{x}} = \begin{bmatrix} -1 & 2 & 0 \\ 3 & -4 & 0 \\ 1 & 2 & -1 \end{bmatrix} \bm{x} +
+\begin{bmatrix} 1 & 0 \\ -1 & 0 \\ 0 & 1/20 \end{bmatrix} \bm{u} \\
+& x_1(0) = 2 \\
+& x_3(0) = 1/2 \\
+& x_2(0) - x_2(1) = 0 \\
+& \int_0^1 x_1(t) \mathrm{d}t = 0 \\
+& -x_1(t) + u_2(t)/12 \leq 0 \\
+& x_2(t) \leq g(t) \\
+& |u_2(t)| \leq 10
+\end{align*}
+}}
+\end{document}
+
+%% solution

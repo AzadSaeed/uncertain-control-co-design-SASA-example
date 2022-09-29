@@ -1,0 +1,25 @@
+%% formulation
+\documentclass{standalone}
+\usepackage{amsmath}
+\usepackage{bm}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\begin{document}
+\setlength{\abovedisplayskip}{2pt}
+\setlength{\belowdisplayskip}{2pt}
+\pagecolor{white}
+\scalebox{2}{\parbox{0.1\textwidth}{%
+\begin{align*}
+\min_{u(t)} \quad & x_1(t_f) \\
+\text{subject to:} \quad & \dot{\bm{x}} = \begin{bmatrix}
+- \zeta x_1 \log(x_1/x_2) \\
+x_2 \left( b - \mu - d x_1^{2/3} + G u \right)
+\end{bmatrix} \\
+& \bm{x}(0) = \bm{x}_0 \\
+& 0 \leq u(t) \leq u_{\max} \\
+& \int_0^{t_f} u(t) \mathrm{d}t \leq A
+\end{align*}
+}}
+\end{document}
+
+%% solution

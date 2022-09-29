@@ -1,0 +1,20 @@
+%% formulation
+\documentclass{standalone}
+\usepackage{amsmath}
+\usepackage{bm}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\begin{document}
+\setlength{\abovedisplayskip}{2pt}
+\setlength{\belowdisplayskip}{2pt}
+\pagecolor{white}
+\scalebox{2}{\parbox{0.1\textwidth}{%
+\begin{align*}
+\min_{\bm{u}(t)} \quad & \bm{x}^T(t_f) \bm{M} \bm{x}(t_f) + \int_{t_0}^{t_f} \left[ \bm{x}^T \bm{Q}(t) \bm{x} + \bm{u}^T \bm{R}(t) \bm{u} \right] \mathrm{d}t \\
+\text{subject to:} \quad & \dot{\bm{x}} = \bm{A}(t) \bm{x} + \bm{B}(t) \bm{u} + \bm{d}(t) \\
+& \bm{x}(t_0) = \bm{x}_0
+\end{align*}
+}}
+\end{document}
+
+%% solution

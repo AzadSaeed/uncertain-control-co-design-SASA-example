@@ -1,0 +1,22 @@
+%% formulation
+\documentclass{standalone}
+\usepackage{amsmath}
+\usepackage{bm}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\begin{document}
+\setlength{\abovedisplayskip}{2pt}
+\setlength{\belowdisplayskip}{2pt}
+\pagecolor{white}
+\scalebox{2}{\parbox{0.1\textwidth}{%
+\begin{align*}
+\min_{u(t)} \quad & \frac{1}{2} \int_{0}^{t_f} x_1^2 \mathrm{d}t \\
+\text{subject to:} \quad & \dot{\bm{x}} = \begin{bmatrix}0 & 1 \\ 0 & 0 \end{bmatrix} \bm{x} + \begin{bmatrix} 1 \\ -1 \end{bmatrix} u \\
+& \bm{x}(0) = (\alpha,\beta) \\
+& \bm{x}(t_f) = (0,0) \\
+& |u(t)| \leq \gamma
+\end{align*}
+}}
+\end{document}
+
+%% solution

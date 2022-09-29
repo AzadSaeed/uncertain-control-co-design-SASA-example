@@ -1,0 +1,20 @@
+%% formulation
+\documentclass{standalone}
+\usepackage{amsmath}
+\usepackage{bm}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\begin{document}
+\setlength{\abovedisplayskip}{2pt}
+\setlength{\belowdisplayskip}{2pt}
+\pagecolor{white}
+\scalebox{2}{\parbox{0.1\textwidth}{%
+\begin{align*}
+\min_{u(t)} \quad & m\left[ x(t_f) \right]^2 + \int_0^{t_f} r u^2 \mathrm{d}t \\
+\text{subject to:} \quad & \dot{x} = b u + a_1 \sin(\omega_1 t) + a_2 \sin(\omega_2 t) \\
+& x(0) = x_0
+\end{align*}
+}}
+\end{document}
+
+%% solution

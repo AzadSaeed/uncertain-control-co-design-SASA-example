@@ -1,0 +1,26 @@
+%% formulation
+\documentclass{standalone}
+\usepackage{amsmath}
+\usepackage{bm}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\begin{document}
+\setlength{\abovedisplayskip}{2pt}
+\setlength{\belowdisplayskip}{2pt}
+\pagecolor{white}
+\scalebox{2}{\parbox{0.1\textwidth}{%
+\begin{align*}
+\min_{u_1(t),p_1} \quad & -x_1(t_f) \\
+\text{subject to:} \quad & \dot{\bm{x}} = \begin{bmatrix}
+x_2 \\
+-\frac{p_1}{J} x_1 + \frac{1}{J} u_1
+\end{bmatrix} \\
+& \bm{x}(0) = (0,0) \\
+& x_2(t_f) = 0 \\
+& 0 \leq p_1 \\
+& -u_{\max} \leq u_1(t) \leq u_{\max}
+\end{align*}
+}}
+\end{document}
+
+%% solution
