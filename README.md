@@ -5,15 +5,23 @@ Azad,S., and Herber, D. R., 2022."Investigations into uncertain control co-desig
 
 Start by openning the Main.m files which contains nine different case studies associated with the porblems discussed in the above-mentioned article.
 
-case 0 solves the deterministic simple SASA problem
-case 1 solves the Stochastic in expectation simple SASA problem in nested architecture using a multiple control approach through Monte Carlo Simulation
-case 2 solves the Stochastic in expectation simple SASA problem in nested architecture using a multiple control approach through generalized Polynomial Chaos
-case 3 solves the worst case robust simple SASA problem using direct single shooting and a single control approach through constraint relaxation
-case 4 solves the worst case robust simple SASA problem using direct single shooting and a single control approach with penalty terms
-case 5 solves the worst case robust simple SASA problem using a multiple control approach through through polytopic uncertainties
-case 6 and 7 solve case 5 for various sizes of uncertainties 
-case 7 solves closed-loop system response
-case 8 implements a robust multi-stage model predicitve control approach using polytopic uncertainties
+*item case 0 solves the deterministic simple SASA problem
+
+*item case 1 solves the Stochastic in expectation simple SASA problem in nested architecture using a multiple control approach through Monte Carlo Simulation
+
+*item case 2 solves the Stochastic in expectation simple SASA problem in nested architecture using a multiple control approach through generalized Polynomial Chaos
+
+*item case 3 solves the worst case robust simple SASA problem using direct single shooting and a single control approach through constraint relaxation
+
+*item case 4 solves the worst case robust simple SASA problem using direct single shooting and a single control approach with penalty terms
+
+*item case 5 solves the worst case robust simple SASA problem using a multiple control approach through through polytopic uncertainties
+
+*item case 6 and 7 solve case 5 for various sizes of uncertainties 
+
+*item case 7 solves closed-loop system response
+
+*item case 8 implements a robust multi-stage model predicitve control approach using polytopic uncertainties
   
 # External Dependencies
 * [MATLAB Figure Workflow](https://github.com/danielrherber/matlab-figure-workflow)
