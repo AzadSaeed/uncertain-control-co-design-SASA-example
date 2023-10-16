@@ -21,7 +21,29 @@ switch upper(opts.UP.method)
         Bu =[0;1/auxdata.Mu_J] ;
         Bz = [0;0;0;0];
 
+    case 'MC_WCPOLYTOPE'
 
+        A = [0, 1; -(xp+auxdata.Vert(i,1))/(auxdata.Mu_J+auxdata.Vert(i,2)), 0 ];
+        Bu =[0;1/(auxdata.Mu_J + auxdata.Vert(i,2))] ;
+        Bz = [0;0;0;0];
+
+    case 'MC_WCPOLYTOPE_MAGNITUDE'
+
+        A = [0, 1; -(xp+auxdata.Vert(1,1))/(auxdata.Mu_J+auxdata.Vert(1,2)), 0 ];
+        Bu =[0;1/(auxdata.Mu_J + auxdata.Vert(1,2))] ;
+        Bz = [0;0;0;0];
+
+    case "PARA_STUDY"
+        
+        if nargin > 4
+            j = varargin{1,1};
+        else
+            i = 1;
+            j=1;
+        end
+        A = [0, 1; -(xp)/(auxdata.J(j,i)), 0 ];
+        Bu =[0;1/(auxdata.J(j,i))] ;
+        Bz = [0;0;0;0];
 end
 
 end

@@ -21,9 +21,12 @@
 % pcase = 3; % SC Worst-case robust
 % pcase = 4; % SC Worst-case robust using penalty instead of constraints
 %
-% pcase = 6; % MC Worst-case- Polytopic uncertainties
-% pcase = 7; % MC Worst-case- Uncertainty size (std)
-% pcase = 8; % MC Worst-case- Uncertainty size (nsigma)
+% pcase = 5; % MC Worst-case- Polytopic uncertainties
+% pcase = 6; % MC Worst-case- Uncertainty size (std)
+% pcase = 7; % MC Worst-case- Uncertainty size (nsigma)
+%
+% pcase = 8; % Closed-loop investigations
+% pcase = 9; % MPC 
 %
 % The Simple SASA problem can  be found in the following reference:
 % D. R. Herber and J. T. Allison, "Unified Scaling of Dynamic Optimization
@@ -121,7 +124,22 @@ Commonfilesetup;
 
 
 %-------------------------------------------------------------------------%
-% Create plots for different cases
-pcase = 3;
-Createplots(pcase)
+% Closed-loop investigations
+% pcase = 8;
+% Closed_loop_investigations
+%-------------------------------------------------------------------------%
+
+
+%-------------------------------------------------------------------------%
+% MPC investigations
+% pcase = 9;
+% SimpleSASA_UCCD(pcase);
+
+%-------------------------------------------------------------------------%
+
+
+%-------------------------------------------------------------------------%
+% Create plots for different cases 0 -7 
+% pcase = 7;
+% Createplots(pcase)
 %-------------------------------------------------------------------------%
