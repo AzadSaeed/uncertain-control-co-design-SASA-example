@@ -5,7 +5,7 @@ Azad,S., and Herber, D. R., 2022."Investigations into uncertain control co-desig
 
 Start by openning the Main.m files which contains nine different case studies associated with the porblems discussed in the above-mentioned article.
 
-*item case 0 solves the deterministic simple SASA problem
+>*item case 0 solves the deterministic simple SASA problem
 
 *item case 1 solves the Stochastic in expectation simple SASA problem in nested architecture using a multiple control approach through Monte Carlo Simulation
 
